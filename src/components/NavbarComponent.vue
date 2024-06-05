@@ -17,21 +17,29 @@
         <LongLogoSVG class="hidden lg:block" />
       </RouterLink>
       <RouterLink to="/">
-        <p class="hidden lg:block text-dark-tea-dark">Homepage</p>
+        <p class="hidden lg:block text-dark-tea-dark size-large font-semibold">
+          Homepage
+        </p>
         <HomepageSVG class="block lg:hidden" />
       </RouterLink>
       <RouterLink to="/dashboard">
-        <p class="hidden lg:block text-dark-tea-dark">Dashboard</p>
+        <p class="hidden lg:block text-dark-tea-dark size-large font-semibold">
+          Dashboard
+        </p>
         <DashboardSVG class="lg:hidden" />
       </RouterLink>
       <RouterLink to="/explore">
-        <p class="hidden lg:block text-dark-tea-dark">Explore</p>
+        <p class="hidden lg:block text-dark-tea-dark size-large font-semibold">
+          Explore
+        </p>
         <ExploreSVG class="lg:hidden" />
       </RouterLink>
     </div>
     <div>
       <RouterLink to="/profile">
-        <p class="hidden lg:block text-dark-tea-dark">Profile</p>
+        <p class="hidden lg:block text-dark-tea-dark size-large font-semibold">
+          Profile
+        </p>
         <ProfileSVG class="lg:hidden" />
       </RouterLink>
     </div>
