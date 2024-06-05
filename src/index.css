@@ -3,6 +3,33 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
+If there's any error about "Unknown Rule", you can add the following line at 
+
+CTRL + P -> settings.json -> User Settings (JSON)
+
+{
+  "css.lint.unknownAtRules": "ignore"
+}
+*/
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  height: 6px;
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #d4d4d4;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #94b56d;
+  border-radius: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -34,13 +61,3 @@ p.size-medium {
 p.size-large {
   font-size: 20px;
 }
-
-/* 
-If there's any error about "Unknown Rule", you can add the following line at 
-
-CTRL + P -> settings.json -> User Settings (JSON)
-
-{
-  "css.lint.unknownAtRules": "ignore"
-}
-*/
