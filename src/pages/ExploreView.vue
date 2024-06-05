@@ -12,7 +12,7 @@
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-        class="rounded-3xl w-full z-50"></iframe>
+        class="rounded-3xl w-full z-50 pointer-events-none"></iframe>
       </div>
     <WatermarkSVG class="absolute z-[-1] top-0 w-full opacity-60" />
 </template>
