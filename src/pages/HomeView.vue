@@ -10,16 +10,18 @@
     <div
       class="flex flex-col md:flex-row w-full h-[400px] md:h-[480px] lg:p-6 bg-white/30 shadow-md rounded-3xl backdrop-blur-lg"
     >
-      <div class="w-[300px]"></div>
+      <div class="flex-1"></div>
       <div
-        class="bg-matcha-dark rounded-3xl flex-1 order-1 max-h-[300px] md:max-h-none md:order-last"
+        class="bg-matcha-dark rounded-3xl flex-1 order-first max-h-[300px] md:max-h-none md:order-last"
       ></div>
     </div>
 
     <!-- The third section -->
     <div class="flex flex-col gap-8">
       <!-- The carousel -->
-      <div class="relative h-[480px] w-full bg-text-dark rounded-3xl">
+      <div
+        class="relative h-[480px] w-full bg-text-dark rounded-3xl hidden md:block"
+      >
         <div
           class="absolute h-6 w-6 rounded-full mx-4 bg-white right-0 top-1/2"
         />
