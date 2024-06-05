@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>Homepage</h1>
-    <p>Welcome to the homepage!</p>
+    <div class="flex">
+      <div class="flex-1 bg-grey outline h-[720px]"></div>
+      <div class="flex-1"></div>
+    </div>
   </div>
 </template>
