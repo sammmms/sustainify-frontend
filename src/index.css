@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 
+If there's any error about "Unknown Rule", you can add the following line at 
+
+CTRL + P -> settings.json -> User Settings (JSON)
+
+{
+  "css.lint.unknownAtRules": "ignore"
+}
+*/
