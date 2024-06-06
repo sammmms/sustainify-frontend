@@ -15,7 +15,7 @@ let carousel = document.getElementsByClassName("navigate");
   <div>
     <div class="flex justify-between items-end">
       <h2 class="ml-2">Redeem</h2>
-      <button class="bg-sage-dark px-[5px] rounded-[5px] h-7 text-[13px]">See More</button>
+      <button class="bg-sage-dark px-[5px] rounded-[5px] h-7 text-[13px] mr-2">See More</button>
     </div>
     <div class="flex w-full overflow-x-auto">
         <div class="container rounded-[10px] w-1/2 md:w-1/5 lg:w-1/5 aspect-square bg-text-dark m-2 flex-none" v-for="card in cards" :key="card"></div>
