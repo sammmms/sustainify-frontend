@@ -1,7 +1,9 @@
 <script setup>
-let cards = [1, 2, 3, 4, 5, 6, 7, 8];
+ import ExploreCarousel from "../components/ExploreCarousel.vue";
 
-let carousel = document.getElementsByClassName("navigate");
+ let cards1 = [1, 2, 3, 4, 5, 6, 7, 8];
+ let cards2 = [1, 2, 3, 4, 5, 6, 7, 8];
+ let cards3 = [1, 2, 3, 4, 5, 6, 7, 8];
 </script>
 
 <template>
@@ -12,14 +14,7 @@ let carousel = document.getElementsByClassName("navigate");
       height="400" frameBorder="0" style="border: 0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade" class="rounded-3xl w-full z-50 pointer-events-none"></iframe>
   </div>
-  <div>
-    <div class="flex justify-between items-end">
-      <h2 class="ml-2">Redeem</h2>
-      <button class="bg-sage-dark px-[5px] rounded-[5px] h-7 text-[13px] mr-2">See More</button>
-    </div>
-    <div class="flex w-full overflow-x-auto">
-        <div class="container rounded-[10px] w-1/2 md:w-1/5 lg:w-1/5 aspect-square bg-text-dark m-2 flex-none" v-for="card in cards" :key="card"></div>
-    </div>
-  </div>
-  <p>{{cardWidth}}</p>
+  <ExploreCarousel title="Redeem" :cards=cards1 round="[10px]" />
+  <ExploreCarousel title="Events" :cards=cards2 round="[10px]" />
+  <ExploreCarousel title="People" :cards=cards3 round="full" />
 </template>
