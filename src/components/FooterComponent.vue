@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="flex w-full pt-6 justify-center items-center border-t-2 border-text-2 bg-white pb-24">
+  <div class="flex w-full pt-12 justify-center items-center border-t-2 border-text-2 bg-white pb-32">
      <div class="flex justify-between lg:w-[1280px] px-10">
       <div class="flex gap-10">
         <ul class="text-[15px] leading-7">
