@@ -4,6 +4,9 @@ export default {
   content: [],
   theme: {
     extend: {
+      fontFamily : {
+        'sans' : ['Inter', 'ui-sans-serif', 'system-ui']
+      },
       colors: {
         text: "#B3B3B3",
         "text-2": "#D9D9D9",
