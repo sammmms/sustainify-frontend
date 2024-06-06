@@ -40,7 +40,9 @@
       </span>
 
       <!-- The cards -->
-      <div class="flex justify-between h-[200px] gap-4 overflow-x-auto">
+      <div
+        class="justify-between h-[200px] gap-4 overflow-x-auto mb-6 hidden md:flex"
+      >
         <div v-for="i in 5" class="flex flex-col min-w-[200px] w-[240px]">
           <div class="w-full flex-1 bg-matcha-dark shadow-md rounded-xl"></div>
           <div
@@ -50,14 +52,17 @@
       </div>
 
       <!-- The cards explanation -->
-      <div v-for="i in 5" class="py-4 flex gap-4">
-        <div class="w-[210px] h-[200px]">
-          <div class="w-full h-full bg-matcha-dark shadow-md rounded-xl"></div>
+      <div
+        v-for="i in 5"
+        class="flex flex-col md:flex-row gap-4 md:max-h-[220px] overflow-clip"
+      >
+        <div class="flex flex-col w-full md:w-[210px] h-[300px] md:h-[200px]">
+          <div class="flex-1 w-full bg-matcha-dark shadow-md rounded-xl"></div>
           <div
             class="w-full h-[20px] bg-matcha-dark shadow-md rounded-md mt-2"
           ></div>
         </div>
-        <p class="flex-1 text-wrap text-justify">
+        <p class="flex-1 text-wrap text-justify overflow-y-auto">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
           itaque architecto suscipit, tenetur veritatis expedita cum corporis ea
           enim eveniet culpa est ex assumenda at autem? Laboriosam praesentium
