@@ -59,5 +59,8 @@ A better environment is our goals, user experience are our priorities.
 
 ## 🤝 Contribute
 Any contribution are welcome! Any suggestion, and response is appreciated! Feel free to <ins>fork</ins> this repository, and submit a <ins>pull-request</ins>. 
+
+## Figma Design
+    https://www.figma.com/design/bFVyyVEpvJBXjVVRnPzrDk/Sustainify?node-id=0-1&t=eGFEQBamIMkin1Rm-1
     
 
