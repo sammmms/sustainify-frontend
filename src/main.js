@@ -11,12 +11,14 @@ import HomeView from "./pages/HomeView.vue";
 import ExploreView from "./pages/ExploreView.vue";
 import DashboardView from "./pages/DashboardView.vue";
 import ProfileView from "./pages/ProfileView.vue";
+import AboutUsView from "./pages/AboutUsView.vue";
 
 const routes = [
   { path: "/", component: HomeView },
   { path: "/explore", component: ExploreView },
   { path: "/dashboard", component: DashboardView },
   { path: "/profile", component: ProfileView },
+  { path: "/about-us", component: AboutUsView },
 ];
 
 const router = createRouter({
