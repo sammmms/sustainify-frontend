@@ -1,10 +1,9 @@
 <script setup>
-import HomeImage from "../components/HomeImage.vue";
 let images = [
   "https://images.pexels.com/photos/3735215/pexels-photo-3735215.jpeg?auto=compress&cs=tinysrgb&w=600",
   "https://images.pexels.com/photos/20720316/pexels-photo-20720316/free-photo-of-flower-near-moss-on-tree.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  "https://images.pexels.com/photos/7512846/pexels-photo-7512846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   "https://images.pexels.com/photos/3735218/pexels-photo-3735218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/7512846/pexels-photo-7512846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 ]
 import { ref } from 'vue';
 
