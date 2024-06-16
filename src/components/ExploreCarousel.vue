@@ -15,7 +15,9 @@ let carousel = document.getElementsByClassName("navigate");
       <button class="bg-sage-dark px-[5px] rounded-[5px] h-7 text-[13px] mr-2 text-dark-tea">See More</button>
     </div>
     <div class="flex w-full overflow-x-auto mr-2">
-        <div :class="'container rounded-' + round + ' w-1/2 md:w-1/5 lg:w-1/5 aspect-square bg-text-dark mx-4 my-2 flex-none'" v-for="card in cards" :key="card"></div>
+        <!-- <div :class="'container rounded-' + round + ' w-1/2 md:w-1/5 lg:w-1/5 aspect-square bg-text-dark mx-4 my-2 flex-none'" v-for="card in cards" :key="card">
+        </div> -->
+        <img :class="'container rounded-' + round + ' w-1/2 md:w-1/5 lg:w-1/5 aspect-square bg-text-dark mx-4 my-2 flex-none object-cover'" v-for="card in cards" :key="card" :src="card" />
     </div>
   </div>
 </template>

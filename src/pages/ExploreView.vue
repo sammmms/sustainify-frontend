@@ -3,7 +3,13 @@
 
  let cards1 = [1, 2, 3, 4, 5, 6, 7, 8];
  let cards2 = [1, 2, 3, 4, 5, 6, 7, 8];
- let cards3 = [1, 2, 3, 4, 5, 6, 7, 8];
+ let cards3 = [
+  "https://images.pexels.com/photos/4927361/pexels-photo-4927361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/3619947/pexels-photo-3619947.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=600",
+ ];
 </script>
 
 <template>
