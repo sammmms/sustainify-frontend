@@ -22,22 +22,30 @@ setInterval(() => {
   <div class="flex flex-col gap-12">
     <!-- The first section -->
     <div class="flex flex-col md:flex-row gap-4 h-[400px] md:h-[480px]">
-      <div class="flex-1 bg-white shadow-md rounded-xl flex flex-col justify-evenly">
-        <div class="p-10 font-semibold sm:text-[60px] text-[30px]">Let's Save the World Together</div>
-        <div class="p-10 text-[18px] text-dark-tea-dark underline">
+      <div class="flex-1 bg-white shadow-md rounded-xl flex flex-col justify-start md:justify-evenly">
+        <div class="px-10 pt-5 sd:p-10 font-semibold sm:text-[60px] text-[30px]">Let's Save the World Together</div>
+        <div class="px-10 pb-5 sd:p-10 text-[18px] text-dark-tea-dark underline">
           <RouterLink to="/about-us">More about us &gt;</RouterLink>
         </div>
       </div>
-      <Transition mode="out-in" class="flex-1 bg-text-dark shadow-md rounded-xl w-[40vw]">
+      <Transition mode="out-in" class="flex-1 bg-text-dark shadow-md rounded-xl w-full h-[100px] md:h-full md:w-[40vw]">
           <img class="w-[40vw] object-cover" :key="count" :src="images[count]" />
       </Transition>
     </div>
 
     <!-- The second section -->
     <div
-      class="flex flex-col md:flex-row w-full h-[400px] md:h-[480px] lg:p-6 bg-white/30 shadow-md rounded-3xl backdrop-blur-lg">
-      <div class="flex-1"></div>
-      <div class="bg-matcha-dark rounded-3xl flex-1 order-first max-h-[300px] md:max-h-none md:order-last"></div>
+      class="flex flex-col md:flex-row w-full h-[480px] lg:p-6 bg-white/30 shadow-md rounded-3xl backdrop-blur-lg">
+      <div class="flex-1 p-5">
+        <h1 class="text-black font-bold text-[20px] md:text-[40px]"><span class="text-dark-tea-dark">Concept:</span> IOT integrated Bins and Gamifying Trash</h1>
+        <div class="text-[14px] md:text-[18px] pt-[10px]">
+          Gain points by simply throwing your trash into any of our smart IOT bins in your area.
+        </div>
+        <div class="text-[14px] md:text-[18px] pt-5 text-dark-tea-dark underline"><RouterLink to="/explore">Find IOT bins around me</RouterLink></div>
+      </div>
+      <div class="bg-matcha-dark rounded-3xl flex-1 order-first max-h-[300px] md:max-h-none md:order-last">
+        <img class="rounded-3xl flex-1 object-cover order-first h-full w-full md:order-last" src="https://www.toxel.com/wp-content/uploads/2009/04/trashcans12.jpg" />
+      </div>
     </div>
 
     <!-- The third section -->
