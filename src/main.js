@@ -9,7 +9,7 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import App from "./App.vue";
 import HomeView from "./pages/HomeView.vue";
 import ExploreView from "./pages/ExploreView.vue";
-import DashboardView from "./pages/DashboardView.vue";
+import DashboardView from "./pages/Dashboard/DashboardView.vue";
 import ProfileView from "./pages/ProfileView.vue";
 import AboutUsView from "./pages/AboutUsView.vue";
 
