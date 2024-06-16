@@ -106,7 +106,7 @@ setInterval(() => {
       <div v-for="(item, index) in goals" class="flex flex-col md:flex-row gap-4 md:max-h-[220px] overflow-clip">
         <div class="flex flex-col w-full md:w-[210px] h-[300px] md:h-[200px]">
           <div class="flex-1 w-full bg-matcha-dark shadow-md rounded-xl">
-            <div class="w-full flex-1 bg-matcha-darkshadow-md rounded-xl">
+            <div class="w-full flex-1 bg-matcha-darkshadow-md rounded-xl h-full">
             <img class="h-full object-cover shadow-md rounded-xl" :src="goalImages[index]" />
           </div>
           </div>
