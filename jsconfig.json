@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/pages/*": ["./src/pages/*"] // Add this line to include the 'DashboardView.vue' file
     }
   },
   "exclude": ["node_modules", "dist"]
