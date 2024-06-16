@@ -6,8 +6,9 @@ import { VueSlickCarousel } from "vue-slick-carousel";
   <div class="flex flex-col gap-12">
     <!-- The first section -->
     <div class="flex flex-col md:flex-row gap-4 h-[400px] md:h-[480px]">
-      <div class="flex-1 bg-white shadow-md rounded-xl">
-        <div class="p-10 font-semibold text-[30px]">Let's Save the World Together</div>
+      <div class="flex-1 bg-white shadow-md rounded-xl flex flex-col justify-evenly">
+          <div class="p-10 font-semibold sm:text-[60px] text-[30px]">Let's Save the World Together</div>
+          <div class="p-10 text-[18px] text-dark-tea-dark underline"><RouterLink to="/about-us">More about us</RouterLink></div>
       </div>
       <div class="flex-1 bg-text-dark shadow-md rounded-xl">
         <VueSlickCarousel :arrows="true" :dots="true">
