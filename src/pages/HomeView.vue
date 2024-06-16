@@ -1,5 +1,22 @@
 <script setup>
-import { VueSlickCarousel } from "vue-slick-carousel";
+import HomeImage from "../components/HomeImage.vue";
+let images = [
+  "https://images.pexels.com/photos/3735215/pexels-photo-3735215.jpeg?auto=compress&cs=tinysrgb&w=600",
+  "https://images.pexels.com/photos/20720316/pexels-photo-20720316/free-photo-of-flower-near-moss-on-tree.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/7512846/pexels-photo-7512846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/3735218/pexels-photo-3735218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+]
+import { ref } from 'vue';
+
+const count = ref(0);
+
+setInterval(() => {
+  if(count.value <= 2){
+    count.value++;
+  } else{
+    count.value = 0;
+  }
+}, 5000);
 </script>
 
 <template>
@@ -7,17 +24,14 @@ import { VueSlickCarousel } from "vue-slick-carousel";
     <!-- The first section -->
     <div class="flex flex-col md:flex-row gap-4 h-[400px] md:h-[480px]">
       <div class="flex-1 bg-white shadow-md rounded-xl flex flex-col justify-evenly">
-          <div class="p-10 font-semibold sm:text-[60px] text-[30px]">Let's Save the World Together</div>
-          <div class="p-10 text-[18px] text-dark-tea-dark underline"><RouterLink to="/about-us">More about us</RouterLink></div>
+        <div class="p-10 font-semibold sm:text-[60px] text-[30px]">Let's Save the World Together</div>
+        <div class="p-10 text-[18px] text-dark-tea-dark underline">
+          <RouterLink to="/about-us">More about us &gt;</RouterLink>
+        </div>
       </div>
-      <div class="flex-1 bg-text-dark shadow-md rounded-xl">
-        <VueSlickCarousel :arrows="true" :dots="true">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-        </VueSlickCarousel>
-      </div>
+      <Transition mode="out-in" class="flex-1 bg-text-dark shadow-md rounded-xl w-[40vw]">
+          <img class="w-[40vw] object-cover" :key="count" :src="images[count]" />
+      </Transition>
     </div>
 
     <!-- The second section -->
@@ -74,3 +88,15 @@ import { VueSlickCarousel } from "vue-slick-carousel";
     </div>
   </div>
 </template>
+
+<style scoped>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>
