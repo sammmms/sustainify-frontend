@@ -28,7 +28,7 @@
     "https://images.pexels.com/photos/15667324/pexels-photo-15667324/free-photo-of-futuristic-skyscraper-under-clear-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/7656994/pexels-photo-7656994.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/3387169/pexels-photo-3387169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/162140/duckling-birds-yellow-fluffy-162140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   ];
 
@@ -75,7 +75,7 @@
     >
       <div class="flex-1 p-5">
         <h1 class="text-black font-bold text-[20px] md:text-[40px]">
-          <span class="text-dark-tea-dark">Concept:</span> IOT integrated Bins
+          <span class="text-dark-tea-dark">Concept:</span> IoT integrated Bins
           and Gamifying Trash
         </h1>
         <div class="text-[14px] md:text-[18px] pt-[10px]">
@@ -112,9 +112,9 @@
         />
       </div>
 
-      <!-- The headings -->
+      <!-- The headings "GOALS" -->
       <span>
-        <h1>Goals</h1>
+        <h1 class="text-matcha">Goals</h1>
         <p class="size-large text-text text-wrap text-justify">
           According to the Sustainable Development Goals that our products tries
           to achieve
@@ -132,8 +132,12 @@
           <div class="w-full flex-1 bg-matcha-darkshadow-md rounded-xl">
             <img class="h-full object-cover shadow-md rounded-xl" :src="item" />
           </div>
-          <div class="w-full h-[50px] bg-matcha-dark shadow-md rounded-lg mt-2">
-            <div class="m-auto text-center font-semibold">
+          <div
+            class="w-full flex min-h-[50px] bg-matcha-dark shadow-md rounded-lg mt-2"
+          >
+            <div
+              class="flex-1 my-auto justify-center items-center text-center mx-2 font-semibold text-dark-tea"
+            >
               {{ goals[index] }}
             </div>
           </div>
@@ -143,24 +147,35 @@
       <!-- The cards explanation -->
       <div
         v-for="(item, index) in goals"
-        class="flex flex-col md:flex-row gap-4 md:max-h-[220px] overflow-clip"
+        class="flex flex-col md:flex-row gap-4 overflow-clip"
       >
-        <div class="flex flex-col w-full md:w-[210px] h-[300px] md:h-[200px]">
+        <div
+          class="flex flex-col gap-4 md:gap-0 w-full md:w-[400px] md:h-[325px]"
+        >
           <div class="flex-1 w-full bg-matcha-dark shadow-md rounded-xl">
             <div
               class="w-full flex-1 bg-matcha-darkshadow-md rounded-xl h-full"
             >
               <img
-                class="h-full object-cover shadow-md rounded-xl"
+                class="h-full w-full object-cover shadow-md rounded-xl"
                 :src="goalImages[index]"
+                placeholder="Goal Image"
               />
             </div>
           </div>
-          <div class="w-full h-[50px] bg-matcha-dark shadow-md rounded-lg mt-2">
-            <div class="m-auto text-center font-semibold">{{ item }}</div>
+          <div
+            class="w-full flex min-h-[50px] bg-matcha-dark shadow-md rounded-lg mt-2"
+          >
+            <div
+              class="flex-1 my-auto text-[18px] justify-center items-center text-center mx-2 font-semibold text-dark-tea"
+            >
+              {{ item }}
+            </div>
           </div>
         </div>
-        <p class="flex-1 text-wrap text-justify overflow-y-auto">
+        <p
+          class="flex-1 min-h-full text-[18px] text-wrap text-justify overflow-y-auto text-dark-tea"
+        >
           {{ goalDesc[index] }}
         </p>
       </div>
