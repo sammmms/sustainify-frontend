@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from "vue";
 import ThumbsUp from "../assets/thumb_up.svg"
 
 const props = defineProps({
@@ -8,6 +9,10 @@ const props = defineProps({
   cover: String,
   pronoun: String
 })
+
+const currentView = ref(0);
+
+
 </script>
 
 <template>
@@ -23,8 +28,8 @@ const props = defineProps({
           <p class="font-semibold text-[20px]">Test Test</p>
           <div class="flex gap-10 text-matcha">
             <p>he/him</p>
-            <p>1.1k followers</p>
-            <p>500 following</p>
+            <p><span class="font-semibold">1.1k</span> followers</p>
+            <p><span class="font-semibold">500</span> following</p>
           </div>
         </div>
       </div>
@@ -34,8 +39,8 @@ const props = defineProps({
       </div>
     </div>
 
-    <!-- section ?? -->
     <div class="flex mb-10 mx-10 mt-[-30px] gap-7">
+      <!-- right section -->
       <div class="h-svh w-[20vw] bg-[#D9D9D9] p-5 rounded-md font-semibold">
         <p class="text-[17px] py-2">Posts</p>
         <hr class="border-black" />
@@ -43,9 +48,11 @@ const props = defineProps({
         <hr class="border-black" />
         <p class="text-[17px] py-2">Brief Analytics</p>
       </div>
-      <div class="h-svh w-full bg-[#D9D9D9] p-5 rounded-md overflow-x-hidden">
+
+      <!-- left section -->
+      <div class="h-svh w-full bg-[#D9D9D9] p-5 rounded-md overflow-y-scroll">
         <!-- posts -->
-        <div class="flex gap-5 w-full h-full m-auto flex-col overflow-y-scroll">
+        <div class="flex gap-5 w-full h-full m-auto flex-col">
           <div class="grid grid-flow-col grid-cols-3 gap-5 w-full auto-cols-fr auto-rows-fr">
             <div class="bg-black w-full aspect-square"></div>
             <div class="bg-black w-full aspect-square"></div>
