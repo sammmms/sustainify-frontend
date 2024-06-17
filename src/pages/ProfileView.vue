@@ -1,22 +1,22 @@
 <script setup>
-import { ref } from "vue";
-import ThumbsUp from "../assets/thumb_up.svg"
+  import { ref } from "vue";
+  import ThumbsUp from "../assets/thumb_up.svg?component";
 
-const props = defineProps({
-  name: String,
-  followers: Number,
-  following: Number,
-  cover: String,
-  pronoun: String
-})
+  const props = defineProps({
+    name: String,
+    followers: Number,
+    following: Number,
+    cover: String,
+    pronoun: String,
+  });
 
-const currentView = ref(0);
-
-
+  const currentView = ref(0);
 </script>
 
 <template>
-  <div class="bg-white max-w-[1280px] min-h-[600px] shadow-md rounded-3xl">
+  <div
+    class="bg-white/20 backdrop-blur-md max-w-[1280px] min-h-[600px] shadow-md rounded-3xl m-4"
+  >
     <!-- cover image -->
     <div class="bg-matcha-dark h-[125px] rounded-t-3xl"></div>
 
@@ -33,7 +33,9 @@ const currentView = ref(0);
           </div>
         </div>
       </div>
-      <div class="bg-matcha-dark h-full px-3 pt-1 mt-2 rounded-lg text-white flex gap-2">
+      <div
+        class="bg-matcha-dark h-full px-3 pt-1 mt-2 rounded-lg text-white flex gap-2"
+      >
         <p class="font-semibold">Follow</p>
         <ThumbsUp />
       </div>
@@ -53,21 +55,30 @@ const currentView = ref(0);
       <div class="h-svh w-full bg-[#D9D9D9] p-5 rounded-md overflow-y-scroll">
         <!-- posts -->
         <div class="flex gap-5 w-full h-full m-auto flex-col">
-          <div class="grid grid-flow-col grid-cols-3 gap-5 w-full auto-cols-fr auto-rows-fr">
+          <div
+            class="grid grid-flow-col grid-cols-3 gap-5 w-full auto-cols-fr auto-rows-fr"
+          >
             <div class="bg-black w-full aspect-square"></div>
             <div class="bg-black w-full aspect-square"></div>
             <div class="bg-black w-full aspect-square"></div>
           </div>
-          <div class="grid grid-flow-col grid-cols-3 gap-5 w-full auto-cols-fr auto-rows-fr">
+          <div
+            class="grid grid-flow-col grid-cols-3 gap-5 w-full auto-cols-fr auto-rows-fr"
+          >
             <div class="bg-black w-full aspect-square"></div>
             <div class="bg-black w-full aspect-square"></div>
             <div class="bg-black w-full aspect-square"></div>
           </div>
-          <div class="grid grid-flow-col grid-cols-3 gap-5 w-full auto-cols-fr auto-rows-fr">
+          <div
+            class="grid grid-flow-col grid-cols-3 gap-5 w-full auto-cols-fr auto-rows-fr"
+          >
             <div class="bg-black w-full aspect-square"></div>
             <div class="bg-black w-full aspect-square"></div>
             <div class="bg-black w-full aspect-square"></div>
-          </div><div class="grid grid-flow-col grid-cols-3 gap-5 w-full auto-cols-fr auto-rows-fr">
+          </div>
+          <div
+            class="grid grid-flow-col grid-cols-3 gap-5 w-full auto-cols-fr auto-rows-fr"
+          >
             <div class="bg-black w-full aspect-square"></div>
             <div class="bg-black w-full aspect-square"></div>
             <div class="bg-black w-full aspect-square"></div>
